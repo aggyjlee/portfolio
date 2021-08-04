@@ -1469,6 +1469,9 @@ li {cursor: pointer}
 			background: url("images/video_overlay.png"), url("../../images/lovethumbnail.jpg");
 		}
 
+		.tiles article:nth-child(3):before {
+			background-color: #e4a668;
+		}
 
 		.tiles article:nth-child(4):before {
 			background: url("images/video_overlay.png"), url("../../images/printthumbnail.png");
@@ -1490,20 +1493,8 @@ li {cursor: pointer}
 			background: url("images/video_overlay.png"), url("../../images/writingthumbnail.png");
 		}
 
-		.tiles article:nth-child(6n - 3):before {
-			background-color: #ec8d81;
-		}
-
-		.tiles article:nth-child(6n - 2):before {
-			background-color: #e4a668;
-		}
-
-		.tiles article:nth-child(6n - 1):before {
-			background-color: #8ea9e8;
-		}
-
 		.tiles article:nth-child(9):before {
-			background-color: #87c5a4;
+			background: url("images/video_overlay.png"), url("../../images/ppthumbnail.png");
 		}
 
 	@media screen and (max-width: 1280px) {
@@ -1978,8 +1969,50 @@ li {cursor: pointer}
 		background-repeat: repeat, no-repeat;
 	}
 
-	#project_intro {
-		background: url("images/video_overlay.png"), url("../../images/one.jpg");
+	#cc_intro {
+		background: url("images/video_overlay.png"), url("../../images/eventcover.png");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
+	#ppt_intro {
+		background: url("images/video_overlay.png"), url("../../images/pptheader.png");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
+	#wr_intro {
+		background: url("images/video_overlay.png"), url("../../images/wrheader.png");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
+	#pp_intro {
+		background: url("images/video_overlay.png"), url("../../images/johnnybg.png");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
+	#smm_intro {
+		background: url("images/video_overlay.png");
+		background-color:#e4a668;
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
+	#work_intro {
+		background: url("images/video_overlay.png");
+		background-color:#b4a6e8;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2197,6 +2230,32 @@ background: #D9D055;
 }
 
 .row_1::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+/* Knight Lab Project */
+.column_2 {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.row_2::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  /* IG Story */
+.column_3 {
+	float: left;
+	width: 25%;
+	padding: 5px;
+}
+
+.row_3::after {
 	content: "";
 	clear: both;
 	display: table;
