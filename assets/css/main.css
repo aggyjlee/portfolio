@@ -2260,3 +2260,16 @@ background: #D9D055;
 	clear: both;
 	display: table;
   }
+
+  /* Coursework */
+.column_2_1 {
+	float: left;
+	width: 33.33%;
+	padding: 20px;
+}
+
+.row_2_1::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
